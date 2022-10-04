@@ -36,7 +36,7 @@ nav {
     color: white;
 }
 
-    /* <!-- 5 section --> */
+    /* <!-- 5 section io, prima versione --> */
 
     .big-div {
         width: 100%;
@@ -107,7 +107,7 @@ color: blue;
     .section-2 {
         border-radius: 25px;
         width: 90%;
-        height: 300px;
+        /* height: 300px; */
         background-color: rgb(0, 255, 255);
         margin: auto;
         text-align: center;
@@ -131,7 +131,7 @@ color: blue;
 
    .section-3 {
     border-radius: 25px;
-    height: 300px;
+    /* height: 300px; */
     background-color: rgb(0, 255, 255);
     margin: auto;
     text-align: center;
@@ -146,7 +146,6 @@ color: blue;
        margin: auto;
        display: flex;
        flex-wrap: wrap; 
-       height: 0;
        justify-content: space-between;
 
 }
@@ -162,5 +161,33 @@ flex-wrap: wrap;
 width: calc(33.33%);
 height: 550px;
 }
+}
+
+
+
+/*mobile first*/
+.container-cards{
+    margin: auto;
+    width: 90%;
+}
+.container-cards .card{
+    background: rgb(0, 255, 255);
+    margin: 20px 0;
+}
+
+@media screen and (min-width: 768px){
+    .container-cards{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .container-cards .card:first-child{
+        width: 65%;
+    }
+
+    .container-cards .card{
+        width: 30%;
+    }
 }
 
